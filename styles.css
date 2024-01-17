@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+}
+.container{
+    display: flex;
+    max-width: 1000px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+}
+.card img{
+    width: 70px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.card h2{
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 50px;
+    margin-left: 40px;
+    margin-bottom: auto;
+    margin-top: 20px;
+}
+.card p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-left: 37px;
+    margin-right: 38px;
+    margin-top: 20px;
+}
+.sedan{
+    background-color: var(--Bright-orange);
+    color: var(--Bright-orange);
+    border: 2px solid;
+    
+}
+.sedan a{
+    background-color: var(--Bright-orange);
+    color: var(--Bright-orange);
+    border: 2px solid;
+    margin: 45px;
+}
+.sedan a:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray-background-headings-buttons);
+    border-color: var(--Very-light-gray-background-headings-buttons);
+}
+.suv{
+    background-color: var(--Dark-cyan);
+    color: var(--Dark-cyan);
+    border: 2px solid;
+}
+.suv a{
+    background-color: var(--Dark-cyan);
+    color: var(--Dark-cyan);
+    border: 2px solid;
+    margin: 45px;
+}
+.suv a:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray-background-headings-buttons);
+    border-color: var(--Very-light-gray-background-headings-buttons);
+}
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-dark-cyan);
+    border: 2px solid;
+}
+.luxury a{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-dark-cyan);
+    border: 2px solid;
+    margin: 45px;
+}
+.luxury a:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray-background-headings-buttons);
+    border-color: var(--Very-light-gray-background-headings-buttons);
+}
+p{
+    color: var(--Transparent-white-paragraphs);
+}
+.card a{
+    text-decoration: none;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    width: fit-content;
+    padding: 18px 40px;
+    border-radius: 40px;
+    margin-top: 60px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        max-width: 400px;
+    }
+    .container .card{
+        gap: 15px;
+    }
+    .card a{
+        margin-top: 20px;
+    }
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 2%;}
+.attribution a { color: hsl(228, 45%, 44%); }
